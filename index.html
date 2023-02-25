@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Try Everything</title>
+
+	<link href="css/style.css" rel="stylesheet" />
+
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</head>
+
+<body>
+	<div class="topright">
+		<div></a>首页</div>
+		<div><a href="#3">人物介绍</a></div>
+		<div class="dropdown">
+			<button class="dropbtn"><a href="#4">影片简介</a></button>
+			<div class="dropdown-content">
+			<a href="#1">精彩片段</a>
+			<a href="#2">故事情节</a>
+			</div>
+		  </div>
+		<div><a href="./wangye/fk.html" target="_blank">电影感悟<src="#"></a></div>
+		<div>关于我们</div>
+	</div>
+	<div id="tFocus">
+
+		<div class="prev" id="prev"></div>
+
+		<div class="next" id="next"></div>
+
+		<ul id="tFocus-pic">
+			<h5><a name="5" id="5"></a>ha</h5>
+			<li><a href="#"><img src="images/111.jpg" width="100%" height="520"></a></li>
+
+			<li><a href="#"><img src="images/2.jpeg" width="100%" height="520"></a></li>
+
+
+			<li><a href="#"><img src="images/4.jpeg" width="100%" height="520"></a></li>
+			
+
+			<li><a href="#"><img src="images/4.jpg" width="100%" height="520"></a></li>
+			
+			<li><a href="#"><img src="images/5.jpg" width="100%" height="520"></a></li>
+			<li><a href="#"><img src="images/6.jpg" width="100%" height="520"></a></li>
+			<li><a href="#"><img src="images/1.jpg" width="100%" height="520"></a></li>
+
+		</ul>
+
+		<div id="tFocusBtn">
+
+			<a href="javascript:void(0);" id="tFocus-leftbtn">上一张</a>
+
+			<div id="tFocus-btn">
+
+				<ul>
+
+					<li class="active"><img src="images/1.jpg" width="260" height="140"></li>
+
+					<li><img src="images/2.jpeg" width="260" height="140"></li>
+
+					<li><img src="images/4.jpeg" width="260" height="140"></li>
+
+					<li><img src="images/4.jpg" width="260" height="140"></li>
+					
+					<li><img src="images/5.jpg" width="260" height="140"></li>
+					<li><img src="images/6.jpg" width="260" height="140"></li>
+                    <li><img src="images/1.jpg" width="260" height="140"></li>
+				</ul>
+
+			</div>
+
+			<a href="javascript:void(0);" id="tFocus-rightbtn">下一张</a>
+
+		</div>
+
+	</div>
+	<!--tFocus end-->
+
+
+
+	<script type="text/javascript">addLoadEvent(Focus());</script>
+	<div>
+		<div class="wais">
+			<h1>人物<a name="3" id="3"></a>介绍</h1>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'a')" id="defaultOpen">朱迪</button>
+			<button class="tablinks" onclick="openCity(event, 'b')">尼克</button>
+			<button class="tablinks" onclick="openCity(event, 'c')">牛局长</button>
+			<button class="tablinks" onclick="openCity(event, 'd')">闪电</button>
+			<button class="tablinks" onclick="openCity(event, 'e')">副市长</button>
+			<button class="tablinks" onclick="openCity(event, 'f')">市长</button>
+		</div>
+	
+		<div id="a" class="tabcontent">
+			<img src="./images/18.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>朱迪·霍普斯（棉尾兔）
+					乐观外向甚至有点急性子的活泼主义者，遇见困难从不放弃。通过自己的奋斗成为现代动物都市的第一个兔子警官。
+					警察局的同僚总是瞧不起她，为了证明自己，她从野牛警察局长手中抢到了一个失踪案，
+					然后迫使狐狸尼克与自己踏上了冒险旅程,凭借自己的胆识与思考发现动物失踪案件背后的阴谋。</p>
+					
+			</div>
+		</div>
+	
+		<div id="b" class="tabcontent">
+			<img src="./images/20.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>尼克·王尔德（赤狐）<br>
+一只在动物城里以坑蒙拐骗为生的狐狸，儿时受到歧视与偏见伤害，放弃了自己的理想。被朱迪设下圈套，被迫与她合作查案,而卷入意想不到的阴谋,但为人心地善良,经常帮助朱迪,最终与朱迪破获了一场大阴谋。是朱迪·霍普斯官方CP。</p>
+			</div>
+		</div>
+	
+		<div id="c" class="tabcontent">
+			<img src="./images/17.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>牛局长（非洲水牛）<br>
+					动物城警察局第一分局局长，脾气暴躁难惹的非洲水牛，很关心这所警局。博戈勉为其难地让朱迪加入警察队伍，是朱迪的警官梦的阻挠者。。
+			</div>
+		</div>
+		<div id="d" class="tabcontent">
+			<img src="./images/21.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>闪电（三趾树懒）<br>
+					一只名为“闪电”的树懒，动物城哺乳动物车管所(DMV)的公务员，办事最慢的“闪电”。说话时吐个字恨不得休息五分钟,连笑起来也像是放了慢镜头。但是喜欢飙车。
+			</div>
+		</div>
+		<div id="e" class="tabcontent">
+			<img src="./images/15.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>副市长（绵羊）<br>
+					市长助理,一只声音很小但是毛很多的甜美绵羊。时时刻刻都对狮市长言听计从,非常配合狮市长的一切工作。但是也最大的反派。
+			</div>
+		</div>
+		<div id="f" class="tabcontent">
+			<img src="./images/16.jpg" width="300px" height="430px"style="float: right;">
+			<div class="txt">
+				<p>市长（狮子）<br>
+					动物城的最高行政领导，它曾说过一句成为朱迪座右铭的名言——在疯狂动物城，任何人能成就任何事。
+			</div>
+		</div>
+	</div>
+	<div class="waiss">
+		
+		<div class="cards">
+			<h1>影片<a name="4" id="4"></a>简介</h1>
+	<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="470px" width="50%" style="padding-left:5%;">
+		<source src="video/7.mp4" type="video/mp4">
+	</video>
+	<div class="txt1">
+	<p id="demo"></p>
+		
+</div>
+		</div>
+			
+				<div class="card">
+					
+					<div class="wonder">
+						精彩<a name="1" id="1"></a>片段<br>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%" style="padding-left: 30px;">
+							<source src="video/1.mp4" type="video/mp4">
+						</video>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%" style="padding-left: 30px;">
+							<source src="video/2.mp4" type="video/mp4">
+						</video>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%" style="padding-left: 30px;">
+							<source src="video/6.mp4" type="video/mp4">
+						</video>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%"  style="padding-left: 30px;">
+							<source src="video/4.mp4" type="video/mp4">
+						</video>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%" style="padding-left: 30px;">
+							<source src="video/5.mp4" type="video/mp4">
+						</video>
+						<video ishivideo="true" autoplay="true" isrotate="true" autoHide="true" controls="controls" height="300px" width="15%" style="padding-left: 30px;">
+							<source src="video/3.mp4" type="video/mp4">
+						</video>
+					</div>
+					
+				</div>
+		
+		</div>
+		<div class="wais">
+			<div class="card1">
+				
+				<div class="wrap">
+					<div class="box">
+						<div class="left"></div>
+						<div class="center"><span>
+							起因<a name="2" id="2"></a>
+						</span></div>
+						<div class="right"> 兔子朱迪从小就梦想着能够成为一名惩恶扬善的刑警,凭借着智慧和努力,朱迪成功的从从警校中毕业进入了疯狂动物城警察局.
+						</div>
+					</div>
+			
+					<div class="box">
+						<div class="left">近日里,城中接连发生动物失踪案件,就在全部警员都致力于调查案件真相之时,朱迪却被局长发配成为了一名无足轻重的交警
+							某日,正在执勤的兔子遇见了名为尼克的狐狸,两人不打不相识,之后又误打误撞的接受寻找失踪的水獭先生的任务.
+						</div>
+						<div class="center"><span>
+							经过
+						</span></div>
+						<div class="right"></div>
+					</div>
+			
+					<div class="box">
+						<div class="left"></div>
+						<div class="center"><span>
+							高潮
+						</span></div>
+						<div class="right">朱迪和尼克在寻找失踪的水獭先生的任务中，朱迪和尼克进入了下水道收容所，发现了失踪的哺乳动物们，也意外录下了狮子市长的对话。狮子市长被捕，朱迪也成为了人们眼中的英雄。
+							朱迪无意之中被引导说出了食肉动物都是凶残的，引发了动物城的种族对立，尼克被朱迪的论调伤了心与朱迪绝交。
+						</div>
+					</div>
+			
+					<div class="box">
+						<div class="left">朱迪发现了真相，这个真相既是有关哺乳动物失踪案的真相，同样也是对种族之间应该如何共处的真相
+						</div>
+						<div class="center"><span>
+							结尾
+						</span></div>
+						<div class="right"></div>
+					</div>
+			
+				
+						
+						
+						
+					</div>
+				</div>
+		</div>
+		
+			
+	
+		
+	
+		
+	<div class="first">
+		<br>
+		Produced by Try Everything team
+		<a href="#5"><img src="./images/66.jpeg" width="40px" height="40px"></a>
+	</div>
+	
+		<script>
+			setTimeout(myFunction, 5000);
+			
+			function myFunction() {
+			  document.getElementById("demo").innerHTML = "一个现代化的动物都市，每种动物在这里都有自己的居所，有沙漠气候的撒哈拉广场、常年严寒的冰川镇等等，它就像一座大熔炉，动物们在这里和平共处——无论是大象还是小老鼠，只要努力，都能闯出一番名堂。兔子朱迪从小就梦想能成为动物城市的警察，尽管身边的所有人都觉得兔子不可能当上警察，但她还是通过自己的努力，跻身到了全是大块头动物城警察局，成为了第一个兔子警官。为了证明自己，她决心侦破一桩神秘案件。追寻真相的路上，朱迪迫使在动物城里以坑蒙拐骗为生的狐狸尼克帮助自己，却发现这桩案件背后隐藏着一个意欲颠覆动物城的巨大阴谋，他们不得不联手合作，去尝试揭开隐藏在这巨大阴谋后的真相";
+			}
+			</script>
+			<script>
+				function openCity(evt, cityName) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+		
+				// 触发 id="defaultOpen" click 事件
+				document.getElementById("defaultOpen").click();
+			</script>
+		
+			
+</body>
+</html>

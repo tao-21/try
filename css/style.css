@@ -1,0 +1,624 @@
+@charset "utf-8";
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box
+}
+
+a,
+img {
+    border: 0;
+    text-decoration: none;
+}
+p{
+    font-size: 20px;
+   
+   
+}
+body {
+
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+  background-image: url("../images/3.jpeg");
+
+}
+
+/* tFocus */
+#tFocus-btn li.active,
+#tFocus-leftbtn,
+#tFocus-rightbtn {
+    display: block;
+    background: url(img/spr.png) no-repeat;
+}
+
+#tFocus {
+    width: 96%;
+    height: 760px;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-right: 1%;
+
+
+}
+
+.topright {
+   margin-bottom: 40px;
+    position: fixed;
+    right: 30px;
+    float: right;
+    z-index: 999;
+    height: 10vh;
+    display: flex;
+}
+
+.topright>div {
+    right: 10px;
+    width: 100px;
+    margin: 10px;
+    color: gold;
+    text-align: center;
+    line-height: 55px;
+    font-size: 22px;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.dropbtn {
+    color:  gold;
+    background-color: #d15a39;
+    padding: 16px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e07a5f;
+    ;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.topright div:hover {
+    background-color: #d15a39;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffb29d
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d15a39;
+}
+
+#tFocus-pic {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    margin:  3.5%;
+    
+}
+
+#tFocus-pic li {
+    width: 90%;
+    height: 520px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+
+    opacity: 0;
+}
+
+#tFocusBtn {
+    width: 94%;
+    height: 168px;
+    padding-left: 15px;
+    margin-top: 5px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+#tFocus-btn {
+    width: 95%;
+    height: 168px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    float: left;
+    margin-right: 3px;
+}
+
+#tFocus-btn ul {
+    width: 100000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#tFocus-btn li {
+    height: 120px;
+    width: 291px;
+    padding-top: 7px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+#tFocus-btn li img {
+    border: 2px solid #dddddd
+}
+
+#tFocus-btn li.active {
+    background-position: -448px -100px;
+}
+
+#tFocus-btn li.active img {
+    border: 2px solid #40b9e5
+}
+
+#tFocus-leftbtn,
+#tFocus-rightbtn {
+    height: 80px;
+    margin-top: 40px;
+    width: 25px;
+    float: left;
+    text-indent: -9999px;
+}
+
+#tFocus-leftbtn {
+    margin-right: 5px;
+    background-position: -455px -60px;
+}
+
+#tFocus-rightbtn {
+    background-position: -480px -60px;
+}
+
+.wais{
+    width: 94%;
+    height: 700px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 3%;
+    
+}
+.wais2{
+    width: 84%;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 8%;
+    box-shadow: 0px 20px 20px 0px black;
+    
+}
+.waiss{
+    width: 84%;
+    height:950px;
+    background-color:#ffb29d;
+    margin-left: 8%;
+    box-shadow: 0px 18px 16px 0px darkgrey;
+    
+}
+.card1 {
+    
+    width:100%;
+    height:640px;
+    float: left;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.card2 {
+    width: 100%;
+    height: 750px;
+    margin-top: 100px;
+  
+    margin-bottom: 50px;
+    
+    
+}
+.container {
+  display: flex;
+  align-items: stretch;
+   margin-top: 2%;
+   height: 320px;
+  
+}
+
+.container > div {
+  
+  color: black;
+  width: 15%;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 75px;
+ height: 300px;
+ background-color: #fff;
+ box-shadow: 10px 10px 5px 5px black;
+}
+.wrap{
+    width: 1000px;
+    position: relative;
+    top: 100px;
+}
+.wrap::after{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 5px;
+    z-index: 5;
+    height: 630px;
+    background-color:black;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left,.right{
+    position: relative;
+    width: 40%;
+    height: 130px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(90, 90, 90);
+    /* background-color: rgba(255,255,255,.5); */
+}
+.box:nth-child(even) .left{
+    background-color: rgba(255,255,255,.4);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.box:nth-child(odd) .right{
+    background-color: rgba(255,255,255,.4);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.center{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center>span{
+    width: 120px;
+    border-radius: 10px;
+    text-align:center;
+    font: 900 24px '';
+    line-height: 50px;
+    background-color: #fff;
+    z-index: 10;
+}
+.cards{
+    background-image: url("../images/101.jpeg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 300px;
+    background-attachment: fixed;
+    width:100%;
+    height: 550px;
+    float: left;
+    margin-bottom: 1%;
+    background-color:#ffb29d;
+   
+}
+.card {
+   
+    width:100%;
+    height: 50vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    float: left;
+ 
+    
+   
+}
+
+.wonder {
+    width: 200%;
+    color: cornflowerblue;
+    font-size: 30px;
+    margin: 10px;
+   
+}
+h1{
+    font-size: 43px;
+    color: cornflowerblue;
+    text-align: left;
+    
+}
+.source {
+    width: 300px;
+    height: 400px;
+
+}
+.txt{
+    margin-top: 100px;
+    width: 40%;
+    height: 50vh;
+    float: left;
+    text-indent: 2em;
+    position: absolute;
+   
+   
+}
+.txt1{
+    margin-top: 100px;
+    width: 40%;
+    height: 50vh;
+    float: right;
+    text-indent: 2em; 
+   
+}
+.first{
+    background-color: lightsalmon;
+    animation-name: example;
+    animation-duration: 8s;
+    height: 100px;
+    color: white;
+    animation-iteration-count: infinite;
+   border-radius: 15px 15px 15px 15px;
+   text-align: center;
+   font-size: 30px;
+   position: relative;
+}
+
+@keyframes example {
+    from {
+        background-color: lightsalmon;
+    }
+
+    to {
+        background-color: cornflowerblue;
+    }
+}
+
+.next>div {
+    color: white;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/**
+* ---------------------------------------------
+* Best result is on FireFox ( of course! :D )
+* ---------------------------------------------
+*/
+@font-face {
+    font-family: 'Merriweather Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Merriweather Sans ExtraBold Italic'), local('MerriweatherSans-ExtraBldItalic'),
+        url(http://fonts.gstatic.com/s/merriweathersans/v5/nAqt4hiqwq3tzCecpgPmVfrUSW10CwTuVx9PepRx9ls.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/s/merriweathersans/v5/nAqt4hiqwq3tzCecpgPmVW2xy75WLVt7UI7Cycabsy8.woff) format('woff');
+}
+
+@font-face {
+    font-family: "open";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"),
+        url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff ) format('woff');
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h2,
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.next{
+    display: flex;
+    width: 90%;
+}
+
+.section {
+    width: 400px;
+    margin: 7px auto;
+    height: 69px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+.title {
+    padding: 20px;
+    padding-top: 15px;
+    background: #00C37E;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #666;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+    position: relative;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 10;
+}
+
+.title:before,
+.title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    font-style: normal;
+    height: 21px;
+    line-height: 1;
+    overflow: hidden;
+    font-family: FontAwesome;
+    font-size: 20px;
+    background: #00C37E;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+.title:before {
+    z-index: 2;
+}
+
+.title:after {
+    top: 25px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.open .title:before {
+    height: 0;
+}
+
+.body1 {
+    font: 16px open, sans-serif;
+    background: #fff;
+    padding: 20px 20px 40px;
+    color: #777;
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    overflow: hidden;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+.body1 h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.body1 h2:before {
+    content: '▪';
+    padding-right: 7px;
+    color: #00C37E;
+}
+
+.body1 a {
+    color: #00C37E;
+}
+
+.body1 span {
+    font-size: 12px;
+}
+
+.section.open {
+    height: 200px;
+}
+
+.open .body1 {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -moz-transform: none;
+    transform: none;
+}
+div.tab button {
+    display: block;
+    background-color:lightcoral;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align:center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 27px;
+    margin: 15px 0;
+  
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: lightyellow;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: lightyellow;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 5px solid darkblue;
+    width: 50%;
+    border-left: none;
+    height: 600px;
+   position: relative;
+   background-color: #fff;
+}
+div.tab {
+    float: left;
+    
+    width: 20%;
+    height: 300px;
+    margin-left: 15%;
+}
+a{
+    text-decoration: none;
+}
+.first.img{
+    float: right;
+    
+}
+h5{
+    visibility: hidden;
+}
